@@ -1,0 +1,1965 @@
+#catapult-cookie-bar {
+    box-sizing: border-box;
+    max-height: 0;
+    opacity: 0;
+    z-index: 99999;
+    overflow: hidden;
+    color: #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #464646
+}
+
+#catapult-cookie-bar a {
+    color: #fff
+}
+
+button#catapultCookie {
+    border: 0;
+    padding: 6px 9px;
+    border-radius: 3px
+}
+
+#catapult-cookie-bar h3 {
+    color: #ddd
+}
+
+.has-cookie-bar #catapult-cookie-bar {
+    opacity: 1;
+    max-height: 999px;
+    min-height: 30px
+}
+
+body a {
+    color: #e2001a
+}
+
+#footer-outer #copyright li a i:hover,
+#footer-outer a:hover,
+#header-outer .widget_shopping_cart .cart_list a,
+#header-outer:not(.transparent) #social-in-menu a i:after,
+#header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu li.current-menu-ancestor > a,
+#header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu li.current-menu-item > a,
+#header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu li.current_page_ancestor > a,
+#header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu li.current_page_item > a,
+#header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.sfHover > a,
+#header-outer:not([data-lhe=animated_underline]) header#top nav > ul > li > a:hover,
+#header-outer[data-format=left-header] .sf-menu .sub-menu .current-menu-item > a,
+#post-area.standard-minimal article.post .minimal-post-meta a:hover,
+#post-area.standard-minimal article.post .more-link span:after,
+#post-area.standard-minimal article.post .more-link:hover span,
+#post-area.standard-minimal article.post .post-header h2 a:hover,
+#post-area.standard-minimal article.post .post-meta .date a,
+#project-meta #single-meta ul li > a,
+#project-meta ul li.meta-share-count .nectar-social a:hover i,
+#project-meta ul li:not(.meta-share-count):hover i,
+#project-meta ul li:not(.meta-share-count):hover span,
+#search-outer #search #close a span:hover,
+#search-outer .ui-widget-content .ui-state-focus .title,
+#search-outer .ui-widget-content .ui-state-hover .title,
+#search-outer .ui-widget-content li:hover a .title,
+#single-below-header a:hover,
+.ascend .comment-list .reply a,
+.blog-recent[data-style=minimal] .col > span,
+.blog-recent[data-style=title_only] .col:hover .post-header .title,
+.carousel-wrap[data-full-width=true] .carousel-heading a:hover i,
+.col:hover > [class*=" icon-"].icon-3x.accent-color.alt-style.hovered,
+.col:hover > [class^=icon-].icon-3x.accent-color.alt-style.hovered,
+.comment-author a:hover,
+.comment-list .comment-meta a:hover,
+.facebook-share.hovered i,
+.facebook-share:hover i,
+.google-plus-share.hovered i,
+.home .blog-recent .col .post-header a:hover,
+.home .blog-recent .col .post-header h3 a,
+.icon-3x[class*=" icon-"],
+.icon-3x[class^=icon-],
+.icon-tiny[class^=icon-],
+.linkedin-share.hovered i,
+.masonry.classic_enhanced article.post .post-meta .icon-salient-heart-2.loved,
+.masonry.classic_enhanced article.post .post-meta a:hover i,
+.nectar-icon-list[data-icon-color=accent-color][data-icon-style=border] .content h4,
+.nectar-icon-list[data-icon-style=border][data-icon-color=accent-color] .list-icon-holder[data-icon_type=numerical] span,
+.nectar-love.loved i,
+.nectar-love:hover i,
+.nectar-milestone .number.accent-color,
+.nectar-slide-in-cart .widget_shopping_cart .cart_list a,
+.nectar_icon_wrap[data-color=accent-color] i,
+.nectar_team_member_close .inner:before,
+.pinterest-share.hovered i,
+.pinterest-share:hover i,
+.portfolio-filters-inline .container ul li a.active,
+.portfolio-items .nectar-love.loved i,
+.portfolio-items .nectar-love:hover i,
+.pricing-column h3,
+.pricing-table[data-style=flat-alternative] .pricing-column.accent-color .interval,
+.pricing-table[data-style=flat-alternative] .pricing-column.accent-color h4,
+.project-attrs li i,
+.recent-posts .post-header a:hover,
+.sf-menu li ul li a:hover,
+.sf-menu li ul li.sfHover > a,
+.sf-menu li ul li.sfHover > a .sf-sub-indicator [class^=icon-],
+.sf-menu ul a:active,
+.sf-menu ul a:focus,
+.sf-menu ul a:hover,
+.sf-menu ul li.current-menu-ancestor > a,
+.sf-menu ul li.current_page_ancestor > a,
+.sf-menu ul li.current_page_item > a,
+.sf-menu ul li.open-submenu > a,
+.sf-menu ul li.sfHover > a,
+.sf-menu ul li:hover > a,
+.sf-menu > li.current-menu-ancestor > a > .sf-sub-indicator [class^=icon-],
+.sf-menu > li.current_page_ancestor > a > .sf-sub-indicator [class^=icon-],
+.single #single-meta ul li.meta-share-count .nectar-social a:hover i,
+.single #single-meta ul li:not(.meta-share-count):hover a,
+.single #single-meta ul li:not(.meta-share-count):hover i,
+.single #single-meta ul li:not(.meta-share-count):hover span,
+.single article.post .post-meta a:hover,
+.svg-icon-holder[data-color=accent-color],
+.tabbed[data-style=minimal] > ul li a.active-tab,
+.team-member a.accent-color:hover,
+.text_on_hover.product .add_to_cart_button,
+.twitter-share.hovered i,
+.woocommerce .material.product .product-wrap .product-add-to-cart a:hover,
+.woocommerce .material.product .product-wrap .product-add-to-cart a:hover > span,
+.woocommerce .star-rating,
+.woocommerce .widget_layered_nav ul li.chosen a:after,
+.woocommerce form .form-row .required,
+.woocommerce p.stars a:hover,
+.woocommerce ul.products li.product .price,
+.woocommerce-MyAccount-navigation ul li.is-active a:before,
+.woocommerce-MyAccount-navigation ul li:hover a:before,
+.woocommerce-checkout-review-order-table .product-info .amount,
+.woocommerce-page .widget_layered_nav ul li.chosen a:after,
+.woocommerce-page form .form-row .required,
+.woocommerce-page table.cart a.remove,
+.woocommerce-page ul.products li.product .price,
+.woocommerce.ascend .price_slider_amount button.button[type=submit],
+.wpcf7-form .wpcf7-not-valid-tip,
+.wpcf7-form p span,
+article.post .post-header a:hover,
+article.post .post-header h2 a,
+article.result .title a,
+article.result a:hover,
+body #header-secondary-outer #social a:hover i,
+body #mobile-menu li.open > a [class^=icon-],
+body #pagination .page-numbers.next:hover,
+body #pagination .page-numbers.prev:hover,
+body #pagination a.page-numbers:hover,
+body #portfolio-nav a:hover i,
+body .circle-border,
+body .google-plus-share:hover i,
+body .hovered .nectar-love i,
+body .linkedin-share:hover i,
+body .twitter-share:hover i,
+body .woocommerce-pagination a.page-numbers:hover,
+body [class^=icon-].icon-default-style,
+body header#top nav .sf-menu li.current_page_item > a .sf-sub-indicator [class^=icon-],
+body[data-dropdown-style=minimal] #header-outer .woocommerce.widget_shopping_cart .cart_list li a.remove,
+body[data-form-submit=see-through] button[type=submit],
+body[data-form-submit=see-through] input[type=submit],
+div[data-style=minimal] .toggle.open h3 a,
+div[data-style=minimal] .toggle:hover h3 a,
+header#top #logo:hover,
+header#top nav .sf-menu li.current_page_ancestor > a .sf-sub-indicator [class^=icon-],
+header#top nav .sf-menu li.current_page_ancestor > a .sf-sub-indicator i,
+header#top nav .sf-menu li.current_page_item > a .sf-sub-indicator i,
+header#top nav ul #search-btn a:hover span,
+header#top nav ul .slide-out-widget-area-toggle a:hover span,
+header#top nav > ul > li.button_bordered > a:hover,
+header#top nav > ul > li.megamenu > ul > li.sfHover > a,
+header#top nav > ul > li.megamenu > ul > li > a:hover,
+html .ascend.woocommerce #sidebar div ul li a:hover,
+html .ascend.woocommerce #sidebar div ul li.current-cat > a,
+html body .woocommerce-pagination a.page-numbers:hover,
+label span,
+span.accent-color,
+ul.sf-menu > li.sfHover > a > .sf-sub-indicator i,
+ul.sf-menu > li > a:active > .sf-sub-indicator i,
+ul.sf-menu > li > a:hover > .sf-sub-indicator i {
+    color: #e2001a !important
+}
+
+.ascend #header-outer:not(.transparent) .cart-outer:hover .cart-menu-wrap:not(.has_products) .icon-salient-cart,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.accent-color.alt-style.hovered,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x.accent-color.alt-style.hovered {
+    color: #e2001a !important
+}
+
+#buddypress a.button:focus,
+#buddypress a.button:hover,
+#buddypress button:hover,
+#buddypress ul.button-nav li.current a,
+#footer-outer #copyright li a.behance:hover,
+#footer-outer #copyright li a.vimeo:hover,
+#footer-outer #footer-widgets .col .tagcloud a:hover,
+#footer-outer #footer-widgets .col input[type=submit],
+#fp-nav.tooltip ul li .fp-tooltip .tooltip-inner,
+#fp-nav.tooltip_alt ul li a span:after,
+#fp-nav:not(.light-controls).tooltip_alt ul li a span:after,
+#header-outer .widget_shopping_cart a.button,
+#header-outer a.cart-contents .cart-wrap span,
+#header-outer.transparent header#top nav > ul > li.button_solid_color > a:before,
+#page-header-bg[data-post-hs=default_minimal] .inner-wrap > a:hover,
+#pagination .next a:hover,
+#pagination .prev a:hover,
+#pagination a.page-numbers:hover,
+#pagination span.page-numbers.current,
+#post-area.standard-minimal article.post .more-link span:before,
+#sidebar .widget .tagcloud a:hover,
+#sidebar .widget:hover [class^=icon-].icon-3x,
+#slide-out-widget-area,
+#slide-out-widget-area-bg.fullscreen,
+#slide-out-widget-area-bg.fullscreen-alt .bg-inner,
+#to-top.dark:hover,
+#to-top:hover,
+.bar_graph li span,
+.blog-recent .more-link span:hover,
+.bottom_controls #portfolio-nav .controls li a i:after,
+.bottom_controls #portfolio-nav ul:first-child li#all-items a:hover i,
+.carousel-next:hover,
+.carousel-prev:hover,
+.comment-list .reply a:hover,
+.divider-border[data-color=accent-color],
+.divider-small-border[data-color=accent-color],
+.flex-direction-nav a,
+.icon-normal,
+.iosSlider .next_slide:hover,
+.iosSlider .prev_slide:hover,
+.jcarousel-next:hover,
+.jcarousel-prev:hover,
+.jp-play-bar,
+.jp-volume-bar-value,
+.masonry.classic_enhanced .posts-container article .meta-category a:hover,
+.masonry.classic_enhanced .posts-container article .video-play-button,
+.masonry.classic_enhanced article.post.link.wide_tall .post-content a:hover .link-inner,
+.masonry.classic_enhanced article.post.quote.wide_tall .post-content a:hover .quote-inner,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.mejs-controls .mejs-time-rail .mejs-time-current,
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current,
+.nectar-animated-title[data-color=accent-color] .nectar-animated-title-inner:after,
+.nectar-button.tilt.accent-color,
+.nectar-button[data-color-override=false].regular-button,
+.nectar-fancy-box:after,
+.nectar-progress-bar span,
+.nectar-recent-posts-slider .container .strong span:before,
+.nectar-slide-in-cart .widget_shopping_cart a.button,
+.nectar-video-box[data-color=default-accent-color] a.nectar_video_lightbox,
+.nectar_icon_wrap[data-style=border-animation][data-color=accent-color]:not([data-draw=true]) .nectar_icon:hover,
+.nectar_image_with_hotspots .nectar_hotspot_wrap .nttip .tipclose span:after,
+.nectar_image_with_hotspots .nectar_hotspot_wrap .nttip .tipclose span:before,
+.nectar_image_with_hotspots[data-stlye=color_pulse][data-color=accent-color] .nectar_hotspot,
+.nectar_video_lightbox.nectar-button[data-color=default-accent-color],
+.nectar_video_lightbox.nectar-button[data-color=transparent-accent-color]:hover,
+.orbit-wrapper div.slider-nav span.left,
+.orbit-wrapper div.slider-nav span.right,
+.portfolio-filters,
+.portfolio-filters #sort-portfolio,
+.portfolio-filters a,
+.portfolio-filters-inline[data-color-scheme=accent-color-underline] a:after,
+.portfolio-filters-inline[data-color-scheme=accent-color],
+.portfolio-items .col[data-default-color=true] .bottom-meta,
+.portfolio-items .col[data-default-color=true] .work-item:not(.style-3) .work-info-bg,
+.post-tags a:hover,
+.pricing-column.highlight h3,
+.pricing-table[data-style=flat-alternative] .pricing-column.accent-color:before,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight h3 .highlight-reason,
+.progress li span,
+.project-attrs li span,
+.select2-container .select2-choice:hover,
+.select2-dropdown-open .select2-choice,
+.single .heading-title[data-header-style=default_minimal] .meta-category a:hover,
+.single-portfolio .facebook-share a:hover,
+.single-portfolio .pinterest-share a:hover,
+.single-portfolio .twitter-share a:hover,
+.single-post .facebook-share a:hover,
+.single-post .pinterest-share a:hover,
+.single-post .twitter-share a:hover,
+.span_12.dark .owl-theme .owl-dots .owl-dot.active span,
+.span_12.dark .owl-theme .owl-dots .owl-dot:hover span,
+.swiper-slide .button.solid_color a,
+.swiper-slide .button.solid_color_2 a,
+.tabbed > ul li a.active-tab,
+.tabbed[data-style=minimal] > ul li a:after,
+.testimonial_slider[data-style=multiple_visible][data-color*=accent-color] .flickity-page-dots .dot.is-selected:before,
+.testimonial_slider[data-style=multiple_visible][data-color*=accent-color] blockquote.is-selected p,
+.text_on_hover.product a.added_to_cart,
+.toggle.open h3 a,
+.twentytwenty-handle,
+.twentytwenty-horizontal .twentytwenty-handle:after,
+.twentytwenty-horizontal .twentytwenty-handle:before,
+.twentytwenty-vertical .twentytwenty-handle:after,
+.twentytwenty-vertical .twentytwenty-handle:before,
+.woocommerce .material.product .add_to_cart_button,
+.woocommerce .span_4 input[type=submit].checkout-button,
+.woocommerce div.product .woocommerce-tabs .full-width-content ul.tabs li a:after,
+.woocommerce div[data-project-style=text_on_hover] .cart .quantity input.minus,
+.woocommerce div[data-project-style=text_on_hover] .cart .quantity input.plus,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-page button.single_add_to_cart_button,
+[class*=" icon-"],
+article.format-status .post-content .status-inner,
+article.post .more-link span:hover,
+article.post.format-aside .aside-inner,
+article.post.link .post-content .link-inner,
+article.post.quote .content-inner .quote-inner .whole-link,
+article.post.quote .post-content .quote-inner,
+body #header-secondary-outer #social li a.behance:hover,
+body #header-secondary-outer #social li a.vimeo:hover,
+body .products-carousel .carousel-next:hover,
+body .products-carousel .carousel-prev:hover,
+body .swiper-slide .button.transparent_2 a.primary-color:hover,
+body [class*=" icon-"].icon-3x.alt-style.accent-color,
+body [class^=icon-].icon-3x.alt-style.accent-color,
+body nav.woocommerce-pagination span.page-numbers.current,
+body.single-post .sharing-default-minimal .nectar-love.loved,
+body[data-button-style=rounded] #to-top:after,
+body[data-button-style=rounded] .wpb_wrapper .facebook-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .facebook-share:before,
+body[data-button-style=rounded] .wpb_wrapper .google-plus-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .google-plus-share:before,
+body[data-button-style=rounded] .wpb_wrapper .linkedin-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .linkedin-share:before,
+body[data-button-style=rounded] .wpb_wrapper .nectar-social:hover > :before,
+body[data-button-style=rounded] .wpb_wrapper .pinterest-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .pinterest-share:before,
+body[data-button-style=rounded] .wpb_wrapper .twitter-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .twitter-share:before,
+body[data-dropdown-style=minimal] #header-outer .widget_shopping_cart a.button,
+body[data-dropdown-style=minimal] #header-outer header#top nav > ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer header#top nav > ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-item > a,
+body[data-dropdown-style=minimal] #header-secondary-outer ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-secondary-outer ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] header#top nav > ul > li.megamenu > ul ul li a:hover,
+body[data-dropdown-style=minimal] header#top nav > ul > li.megamenu > ul ul li.sfHover > a,
+body[data-dropdown-style=minimal]:not([data-header-format=left-header]) header#top nav > ul > li.megamenu > ul ul li.current-menu-item a,
+body[data-fancy-form-rcs="1"] [type=radio]:checked + label:after,
+body[data-form-submit=regular] .container-wrap .span_12.light button[type=submit]:hover,
+body[data-form-submit=regular] .container-wrap .span_12.light input[type=submit]:hover,
+body[data-form-submit=regular] button[type=submit],
+body[data-form-submit=regular] input[type=submit],
+body[data-form-submit=see-through] .container-wrap .span_12.light button[type=submit]:hover,
+body[data-form-submit=see-through] .container-wrap .span_12.light input[type=submit]:hover,
+body[data-form-submit=see-through] button[type=submit]:hover,
+body[data-form-submit=see-through] input[type=submit]:hover,
+body[data-header-format=left-header] #header-outer[data-lhe=animated_underline] header#top nav ul li:not([class*=button_]) > a span:after,
+button[type=submit]:hover,
+div[data-style=minimal] .toggle.open i:after,
+div[data-style=minimal] .toggle.open i:before,
+div[data-style=minimal] .toggle:hover i:after,
+div[data-style=minimal] .toggle:hover i:before,
+header#top nav ul .slide-out-widget-area-toggle a:hover i.lines,
+header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:after,
+header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:before,
+header#top nav ul .slide-out-widget-area-toggle[data-icon-animation=simple-transform] a:hover i.lines-button:after,
+header#top nav > ul > li.button_solid_color > a:before,
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color: #e2001a !important
+}
+
+.col:hover > [class*=" icon-"].icon-3x:not(.alt-style).accent-color.hovered,
+.col:hover > [class^=icon-].icon-3x:not(.alt-style).accent-color.hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x:not(.alt-style).accent-color.hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x:not(.alt-style).accent-color.hovered,
+body .nectar-button.see-through-2[data-hover-color-override=false]:hover {
+    background-color: #e2001a !important
+}
+
+.bottom_controls #portfolio-nav ul:first-child li#all-items a:hover i {
+    box-shadow: -.6em 0 #e2001a, -.6em .6em #e2001a, .6em 0 #e2001a, .6em -.6em #e2001a, 0 -.6em #e2001a, -.6em -.6em #e2001a, 0 .6em #e2001a, .6em .6em #e2001a
+}
+
+#featured article .post-title a:hover,
+#footer-outer #flickr a:hover img,
+#header-outer:not(.transparent) header#top nav > ul > li.button_bordered > a:hover:before,
+#header-outer[data-lhe=animated_underline] header#top nav > ul > li > a:after,
+#sidebar #flickr a:hover img,
+.nectar_icon_wrap[data-style=border-animation][data-color=accent-color]:not([data-draw=true]) .nectar_icon,
+.nectar_icon_wrap[data-style=border-animation][data-color=accent-color][data-draw=true]:hover .nectar_icon,
+.nectar_icon_wrap[data-style=border-basic][data-color=accent-color] .nectar_icon,
+.nectar_image_with_hotspots .nectar_hotspot_wrap .nttip .tipclose,
+.recent_projects_widget a:hover img,
+.select2-container .select2-choice:hover,
+.select2-dropdown-open .select2-choice,
+.single #project-meta ul li:not(.meta-share-count):hover a,
+.single #single-meta ul li:not(.meta-share-count):hover a,
+.tabbed > ul li a.active-tab,
+body #featured article .post-title a:hover,
+body .nectar-button.see-through-2[data-hover-color-override=false]:hover,
+body .recent_projects_widget a:hover img,
+body[data-button-style=rounded] #pagination > a:hover,
+body[data-button-style=rounded] .wpb_wrapper .facebook-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .facebook-share:before,
+body[data-button-style=rounded] .wpb_wrapper .google-plus-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .google-plus-share:before,
+body[data-button-style=rounded] .wpb_wrapper .linkedin-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .linkedin-share:before,
+body[data-button-style=rounded] .wpb_wrapper .nectar-social:hover > :before,
+body[data-button-style=rounded] .wpb_wrapper .pinterest-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .pinterest-share:before,
+body[data-button-style=rounded] .wpb_wrapper .twitter-share.hovered:before,
+body[data-button-style=rounded] .wpb_wrapper .twitter-share:before,
+body[data-fancy-form-rcs="1"] [type=radio]:checked + label:after,
+body[data-fancy-form-rcs="1"] [type=radio]:checked + label:before,
+body[data-fancy-form-rcs="1"] input[type=checkbox]:checked + label > span,
+body[data-form-style=minimal] label:after,
+body[data-form-submit=see-through] button[type=submit],
+body[data-form-submit=see-through] input[type=submit],
+div.wpcf7-validation-errors,
+div[data-style=minimal] .toggle.accent-color.open i,
+div[data-style=minimal] .toggle.accent-color:hover i,
+div[data-style=minimal] .toggle.default.open i,
+div[data-style=minimal] .toggle.default:hover i {
+    border-color: #e2001a !important
+}
+
+#fp-nav.tooltip_alt ul li a.active span,
+#fp-nav:not(.light-controls).tooltip_alt ul li a.active span {
+    box-shadow: inset 0 0 0 2px #e2001a;
+    -webkit-box-shadow: inset 0 0 0 2px #e2001a
+}
+
+.default-loading-icon:before {
+    border-top-color: #e2001a !important
+}
+
+#fp-nav.tooltip ul li .fp-tooltip .tooltip-inner:after,
+#header-outer a.cart-contents span:before {
+    border-color: transparent #e2001a !important
+}
+
+.nectar_team_member_close .inner,
+.portfolio-items[data-ps="6"] .bg-overlay,
+.portfolio-items[data-ps="6"].no-masonry .bg-overlay,
+body #sidebar .widget:hover .circle-border,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover .hovered .circle-border,
+body .dark .testimonial_slider[data-style=multiple_visible][data-color*=accent-color] blockquote .bottom-arrow:after,
+body .testimonial_slider[data-style=multiple_visible][data-color*=accent-color] blockquote .bottom-arrow:after {
+    border-color: #e2001a
+}
+
+.gallery a:hover img {
+    border-color: #e2001a !important
+}
+
+@media only screen and (min-width :1px) and (max-width :1000px) {
+    body #featured article .post-title > a {
+        background-color: #e2001a
+    }
+
+    body #featured article .post-title > a {
+        border-color: #e2001a
+    }
+}
+
+.nectar-button.regular-button.extra-color-1,
+.nectar-button.tilt.extra-color-1 {
+    background-color: #fff !important
+}
+
+#header-outer .widget_shopping_cart .cart_list li a.remove,
+#header-outer .woocommerce.widget_shopping_cart .cart_list li a.remove,
+.icon-3x[class*=" icon-"].extra-color-1:not(.alt-style),
+.icon-3x[class^=icon-].extra-color-1:not(.alt-style),
+.icon-tiny[class^=icon-].extra-color-1,
+.nectar-icon-list[data-icon-color=extra-color-1][data-icon-style=border] .content h4,
+.nectar-icon-list[data-icon-style=border][data-icon-color=extra-color-1] .list-icon-holder[data-icon_type=numerical] span,
+.nectar-milestone .number.extra-color-1,
+.nectar_icon_wrap[data-color=extra-color-1] i,
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-1 .interval,
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-1 h4,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight.extra-color-1 h3,
+.stock.out-of-stock,
+.svg-icon-holder[data-color=extra-color-1],
+.team-member a.extra-color-1:hover,
+.team-member ul.social.extra-color-1 li a,
+.woocommerce-page table.cart a.remove,
+body .icon-3x[class*=" icon-"].extra-color-1:not(.alt-style) .circle-border,
+body [class^=icon-].icon-default-style.extra-color-1,
+body [class^=icon-].icon-default-style[data-color=extra-color-1],
+div[data-style=minimal] .toggle.extra-color-1.open h3 a,
+div[data-style=minimal] .toggle.extra-color-1:hover h3 a,
+span.extra-color-1 {
+    color: #fff !important
+}
+
+#sidebar .widget:hover [class^=icon-].icon-3x.extra-color-1:not(.alt-style),
+.col:hover > [class*=" icon-"].icon-3x.extra-color-1:not(.alt-style).hovered,
+.col:hover > [class^=icon-].icon-3x.extra-color-1:not(.alt-style),
+.divider-border[data-color=extra-color-1],
+.divider-small-border[data-color=extra-color-1],
+.nectar-animated-title[data-color=extra-color-1] .nectar-animated-title-inner:after,
+.nectar-button.nectar_video_lightbox[data-color=default-extra-color-1],
+.nectar-fancy-box[data-color=extra-color-1]:after,
+.nectar-video-box[data-color=extra-color-1] a.nectar_video_lightbox,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-1]:not([data-draw=true]) .nectar_icon:hover,
+.nectar_image_with_hotspots[data-stlye=color_pulse][data-color=extra-color-1] .nectar_hotspot,
+.nectar_video_lightbox.nectar-button[data-color=transparent-extra-color-1]:hover,
+.portfolio-filters-inline[data-color-scheme=extra-color-1-underline] a:after,
+.portfolio-filters-inline[data-color-scheme=extra-color-1],
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-1:before,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight.extra-color-1 h3 .highlight-reason,
+.testimonial_slider[data-style=multiple_visible][data-color*=extra-color-1] .flickity-page-dots .dot.is-selected:before,
+.testimonial_slider[data-style=multiple_visible][data-color*=extra-color-1] blockquote.is-selected p,
+body .col:not(#post-area):not(#sidebar):not(.span_12):hover a [class*=" icon-"].icon-3x.extra-color-1:not(.alt-style).hovered,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.extra-color-1:not(.alt-style).hovered,
+body .swiper-slide .button.transparent_2 a.extra-color-1:hover,
+div[data-style=minimal] .toggle.extra-color-1.open i:after,
+div[data-style=minimal] .toggle.extra-color-1:hover i:after,
+div[data-style=minimal] .toggle.extra-color-1:hover i:before,
+div[data-style=minimal] .toggle.open.extra-color-1 i:before {
+    background-color: #fff !important
+}
+
+#header-outer .widget_shopping_cart a.button,
+.bar_graph li span.extra-color-1,
+.extra-color-1.icon-normal,
+.nectar-progress-bar span.extra-color-1,
+.swiper-slide .button.solid_color a.extra-color-1,
+.swiper-slide .button.solid_color_2 a.extra-color-1,
+.toggle.open.extra-color-1 h3 a,
+.woocommerce span.onsale,
+.woocommerce ul.products li.product .onsale,
+.woocommerce-page span.onsale,
+.woocommerce-page table.cart a.remove:hover,
+.woocommerce-page ul.products li.product .onsale,
+[class*=" icon-"].extra-color-1.icon-normal,
+body [class*=" icon-"].icon-3x.alt-style.extra-color-1,
+body [class^=icon-].icon-3x.alt-style.extra-color-1 {
+    background-color: #fff !important
+}
+
+.col:hover > [class*=" icon-"].icon-3x.extra-color-1.alt-style.hovered,
+.col:hover > [class^=icon-].icon-3x.extra-color-1.alt-style.hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.extra-color-1.alt-style.hovered,
+.no-highlight.extra-color-1 h3,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x.extra-color-1.alt-style.hovered {
+    color: #fff !important
+}
+
+#header-outer .woocommerce.widget_shopping_cart .cart_list li a.remove,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-1]:not([data-draw=true]) .nectar_icon,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-1][data-draw=true]:hover .nectar_icon,
+.nectar_icon_wrap[data-style=border-basic][data-color=extra-color-1] .nectar_icon,
+.woocommerce-page table.cart a.remove,
+body #sidebar .widget:hover .extra-color-1 .circle-border,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover .extra-color-1.hovered .circle-border,
+body .dark .testimonial_slider[data-style=multiple_visible][data-color*=extra-color-1] blockquote .bottom-arrow:after,
+body .testimonial_slider[data-style=multiple_visible][data-color*=extra-color-1] blockquote .bottom-arrow:after,
+div[data-style=minimal] .toggle.extra-color-1:hover i,
+div[data-style=minimal] .toggle.open.extra-color-1 i {
+    border-color: #fff
+}
+
+.pricing-column.highlight.extra-color-1 h3 {
+    background-color: #fff !important
+}
+
+.nectar-button.regular-button.extra-color-2,
+.nectar-button.tilt.extra-color-2 {
+    background-color: #fc0 !important
+}
+
+.icon-3x[class*=" icon-"].extra-color-2:not(.alt-style),
+.icon-3x[class^=icon-].extra-color-2:not(.alt-style),
+.icon-tiny[class^=icon-].extra-color-2,
+.nectar-icon-list[data-icon-color=extra-color-2][data-icon-style=border] .content h4,
+.nectar-icon-list[data-icon-style=border][data-icon-color=extra-color-2] .list-icon-holder[data-icon_type=numerical] span,
+.nectar-milestone .number.extra-color-2,
+.nectar_icon_wrap[data-color=extra-color-2] i,
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-2 .interval,
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-2 h4,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight.extra-color-2 h3,
+.svg-icon-holder[data-color=extra-color-2],
+.team-member a.extra-color-2:hover,
+.team-member ul.social.extra-color-2 li a,
+body .icon-3x[class*=" icon-"].extra-color-2 .circle-border,
+body [class^=icon-].icon-default-style.extra-color-2,
+body [class^=icon-].icon-default-style[data-color=extra-color-2],
+div[data-style=minimal] .toggle.extra-color-2.open h3 a,
+div[data-style=minimal] .toggle.extra-color-2:hover h3 a,
+span.extra-color-2 {
+    color: #fc0 !important
+}
+
+#sidebar .widget:hover [class^=icon-].icon-3x.extra-color-2:not(.alt-style),
+.col:hover > [class*=" icon-"].icon-3x.extra-color-2:not(.alt-style).hovered,
+.col:hover > [class^=icon-].icon-3x.extra-color-2:not(.alt-style).hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.extra-color-2:not(.alt-style).hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x.extra-color-2:not(.alt-style).hovered,
+.divider-border[data-color=extra-color-2],
+.divider-small-border[data-color=extra-color-2],
+.nectar-animated-title[data-color=extra-color-2] .nectar-animated-title-inner:after,
+.nectar-button.nectar_video_lightbox[data-color=default-extra-color-2],
+.nectar-fancy-box[data-color=extra-color-2]:after,
+.nectar-video-box[data-color=extra-color-2] a.nectar_video_lightbox,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-2]:not([data-draw=true]) .nectar_icon:hover,
+.nectar_image_with_hotspots[data-stlye=color_pulse][data-color=extra-color-2] .nectar_hotspot,
+.nectar_video_lightbox.nectar-button[data-color=transparent-extra-color-2]:hover,
+.portfolio-filters-inline[data-color-scheme=extra-color-2-underline] a:after,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight.extra-color-2 h3 .highlight-reason,
+.testimonial_slider[data-style=multiple_visible][data-color*=extra-color-2] .flickity-page-dots .dot.is-selected:before,
+.testimonial_slider[data-style=multiple_visible][data-color*=extra-color-2] blockquote.is-selected p,
+body .swiper-slide .button.transparent_2 a.extra-color-2:hover,
+div[data-style=minimal] .toggle.extra-color-2.open i:after,
+div[data-style=minimal] .toggle.extra-color-2:hover i:after,
+div[data-style=minimal] .toggle.extra-color-2:hover i:before,
+div[data-style=minimal] .toggle.open.extra-color-2 i:before {
+    background-color: #fc0 !important
+}
+
+.bar_graph li span.extra-color-2,
+.extra-color-2.icon-normal,
+.nectar-progress-bar span.extra-color-2,
+.portfolio-filters-inline[data-color-scheme=extra-color-2],
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-2:before,
+.swiper-slide .button.solid_color a.extra-color-2,
+.swiper-slide .button.solid_color_2 a.extra-color-2,
+.toggle.open.extra-color-2 h3 a,
+.woocommerce .product-wrap .add_to_cart_button.added,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range,
+[class*=" icon-"].extra-color-2.icon-normal,
+body [class*=" icon-"].icon-3x.alt-style.extra-color-2,
+body [class^=icon-].icon-3x.alt-style.extra-color-2 {
+    background-color: #fc0 !important
+}
+
+.col:hover > [class*=" icon-"].icon-3x.extra-color-2.alt-style.hovered,
+.col:hover > [class^=icon-].icon-3x.extra-color-2.alt-style.hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.extra-color-2.alt-style.hovered,
+.no-highlight.extra-color-2 h3,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x.extra-color-2.alt-style.hovered {
+    color: #fc0 !important
+}
+
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-2]:not([data-draw=true]) .nectar_icon,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-2][data-draw=true]:hover .nectar_icon,
+.nectar_icon_wrap[data-style=border-basic][data-color=extra-color-2] .nectar_icon,
+body #sidebar .widget:hover .extra-color-2 .circle-border,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover .extra-color-2.hovered .circle-border,
+body .dark .testimonial_slider[data-style=multiple_visible][data-color*=extra-color-2] blockquote .bottom-arrow:after,
+body .testimonial_slider[data-style=multiple_visible][data-color*=extra-color-2] blockquote .bottom-arrow:after,
+div[data-style=minimal] .toggle.extra-color-2:hover i,
+div[data-style=minimal] .toggle.open.extra-color-2 i {
+    border-color: #fc0
+}
+
+.pricing-column.highlight.extra-color-2 h3 {
+    background-color: #fc0 !important
+}
+
+.nectar-button.regular-button.extra-color-3,
+.nectar-button.tilt.extra-color-3 {
+    background-color: #9e9e9e !important
+}
+
+.icon-3x[class*=" icon-"].extra-color-3:not(.alt-style),
+.icon-3x[class^=icon-].extra-color-3:not(.alt-style),
+.icon-tiny[class^=icon-].extra-color-3,
+.nectar-icon-list[data-icon-color=extra-color-3][data-icon-style=border] .content h4,
+.nectar-icon-list[data-icon-style=border][data-icon-color=extra-color-3] .list-icon-holder[data-icon_type=numerical] span,
+.nectar-milestone .number.extra-color-3,
+.nectar_icon_wrap[data-color=extra-color-3] i,
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-3 .interval,
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-3 h4,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight.extra-color-3 h3,
+.svg-icon-holder[data-color=extra-color-3],
+.team-member a.extra-color-3:hover,
+.team-member ul.social.extra-color-3 li a,
+body .icon-3x[class*=" icon-"].extra-color-3 .circle-border,
+body [class^=icon-].icon-default-style.extra-color-3,
+body [class^=icon-].icon-default-style[data-color=extra-color-3],
+div[data-style=minimal] .toggle.extra-color-3.open h3 a,
+div[data-style=minimal] .toggle.extra-color-3:hover h3 a,
+span.extra-color-3 {
+    color: #9e9e9e !important
+}
+
+#sidebar .widget:hover [class^=icon-].icon-3x.extra-color-3:not(.alt-style),
+.col:hover > [class*=" icon-"].icon-3x.extra-color-3:not(.alt-style).hovered,
+.col:hover > [class^=icon-].icon-3x.extra-color-3:not(.alt-style).hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.extra-color-3:not(.alt-style).hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x.extra-color-3:not(.alt-style).hovered,
+.divider-border[data-color=extra-color-3],
+.divider-small-border[data-color=extra-color-3],
+.nectar-animated-title[data-color=extra-color-3] .nectar-animated-title-inner:after,
+.nectar-button.nectar_video_lightbox[data-color=default-extra-color-3],
+.nectar-fancy-box[data-color=extra-color-3]:after,
+.nectar-video-box[data-color=extra-color-3] a.nectar_video_lightbox,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-3]:not([data-draw=true]) .nectar_icon:hover,
+.nectar_image_with_hotspots[data-stlye=color_pulse][data-color=extra-color-3] .nectar_hotspot,
+.nectar_video_lightbox.nectar-button[data-color=transparent-extra-color-3]:hover,
+.portfolio-filters-inline[data-color-scheme=extra-color-3-underline] a:after,
+.portfolio-filters-inline[data-color-scheme=extra-color-3],
+.pricing-table[data-style=flat-alternative] .pricing-column.extra-color-3:before,
+.pricing-table[data-style=flat-alternative] .pricing-column.highlight.extra-color-3 h3 .highlight-reason,
+.testimonial_slider[data-style=multiple_visible][data-color*=extra-color-3] .flickity-page-dots .dot.is-selected:before,
+.testimonial_slider[data-style=multiple_visible][data-color*=extra-color-3] blockquote.is-selected p,
+body .swiper-slide .button.transparent_2 a.extra-color-3:hover,
+div[data-style=minimal] .toggle.extra-color-3.open i:after,
+div[data-style=minimal] .toggle.extra-color-3:hover i:after,
+div[data-style=minimal] .toggle.extra-color-3:hover i:before,
+div[data-style=minimal] .toggle.open.extra-color-3 i:before {
+    background-color: #9e9e9e !important
+}
+
+.bar_graph li span.extra-color-3,
+.extra-color-3.icon-normal,
+.nectar-progress-bar span.extra-color-3,
+.swiper-slide .button.solid_color a.extra-color-3,
+.swiper-slide .button.solid_color_2 a.extra-color-3,
+.toggle.open.extra-color-3 h3 a,
+[class*=" icon-"].extra-color-3.icon-normal,
+body [class*=" icon-"].icon-3x.alt-style.extra-color-3,
+body [class^=icon-].icon-3x.alt-style.extra-color-3 {
+    background-color: #9e9e9e !important
+}
+
+.col:hover > [class*=" icon-"].icon-3x.extra-color-3.alt-style.hovered,
+.col:hover > [class^=icon-].icon-3x.extra-color-3.alt-style.hovered,
+.col:not(#post-area):not(.span_12):not(#sidebar):hover [class^=icon-].icon-3x.extra-color-3.alt-style.hovered,
+.no-highlight.extra-color-3 h3,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class*=" icon-"].icon-3x.extra-color-3.alt-style.hovered {
+    color: #9e9e9e !important
+}
+
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-3]:not([data-draw=true]) .nectar_icon,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-3][data-draw=true]:hover .nectar_icon,
+.nectar_icon_wrap[data-style=border-basic][data-color=extra-color-3] .nectar_icon,
+body #sidebar .widget:hover .extra-color-3 .circle-border,
+body .col:not(#post-area):not(.span_12):not(#sidebar):hover .extra-color-3.hovered .circle-border,
+body .dark .testimonial_slider[data-style=multiple_visible][data-color*=extra-color-3] blockquote .bottom-arrow:after,
+body .testimonial_slider[data-style=multiple_visible][data-color*=extra-color-3] blockquote .bottom-arrow:after,
+div[data-style=minimal] .toggle.extra-color-3:hover i,
+div[data-style=minimal] .toggle.open.extra-color-3 i {
+    border-color: #9e9e9e
+}
+
+.pricing-column.highlight.extra-color-3 h3 {
+    background-color: #9e9e9e !important
+}
+
+.divider-border[data-color=extra-color-gradient-1],
+.divider-small-border[data-color=extra-color-gradient-1],
+.nectar-progress-bar span.extra-color-gradient-1 {
+    background: #fff;
+    background: linear-gradient(to right, #fff, #fff)
+}
+
+.icon-normal.extra-color-gradient-1,
+.nectar-button.extra-color-gradient-1:after,
+.nectar-button.see-through-extra-color-gradient-1:after,
+.nectar_icon_wrap[data-color=extra-color-gradient-1] i,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-gradient-1]:before,
+body [class^=icon-].icon-3x.alt-style.extra-color-gradient-1 {
+    background: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff)
+}
+
+.nectar-button.extra-color-gradient-1,
+.nectar-button.see-through-extra-color-gradient-1 {
+    border-width: 3px;
+    border-style: solid;
+    -moz-border-image: -moz-linear-gradient(top right, #fff 0, #fff 100%);
+    -webkit-border-image: -webkit-linear-gradient(top right, #fff 0, #fff 100%);
+    border-image: linear-gradient(to bottom right, #fff 0, #fff 100%);
+    border-image-slice: 1
+}
+
+.nectar-gradient-text[data-color=extra-color-gradient-1][data-direction=horizontal] * {
+    background-image: linear-gradient(to right, #fff, #fff)
+}
+
+.nectar-gradient-text[data-color=extra-color-gradient-1] *,
+.nectar-icon-list[data-icon-style=border][data-icon-color=extra-color-gradient-1] .list-icon-holder[data-icon_type=numerical] span {
+    color: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block
+}
+
+.nectar_icon_wrap[data-color=extra-color-gradient-1] i,
+[class*=" icon-"].extra-color-gradient-1:not(.icon-normal):before,
+[class*=" icon-"][data-color=extra-color-gradient-1]:before,
+[class^=icon-].extra-color-gradient-1:not(.icon-normal):before,
+[class^=icon-][data-color=extra-color-gradient-1]:before {
+    color: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: initial
+}
+
+.nectar-button.extra-color-gradient-1 .hover,
+.nectar-button.see-through-extra-color-gradient-1 .start {
+    background: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: initial
+}
+
+.nectar-button.extra-color-gradient-1.no-text-grad .hover,
+.nectar-button.see-through-extra-color-gradient-1.no-text-grad .start {
+    background: 0 0 !important;
+    color: #fff !important
+}
+
+.divider-border[data-color=extra-color-gradient-2],
+.divider-small-border[data-color=extra-color-gradient-2],
+.nectar-progress-bar span.extra-color-gradient-2 {
+    background: #fff;
+    background: linear-gradient(to right, #fff, #fff)
+}
+
+.icon-normal.extra-color-gradient-2,
+.nectar-button.extra-color-gradient-2:after,
+.nectar-button.see-through-extra-color-gradient-2:after,
+.nectar_icon_wrap[data-color=extra-color-gradient-2] i,
+.nectar_icon_wrap[data-style=border-animation][data-color=extra-color-gradient-2]:before,
+body [class^=icon-].icon-3x.alt-style.extra-color-gradient-2 {
+    background: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff)
+}
+
+.nectar-button.extra-color-gradient-2,
+.nectar-button.see-through-extra-color-gradient-2 {
+    border-width: 3px;
+    border-style: solid;
+    -moz-border-image: -moz-linear-gradient(top right, #fff 0, #fff 100%);
+    -webkit-border-image: -webkit-linear-gradient(top right, #fff 0, #fff 100%);
+    border-image: linear-gradient(to bottom right, #fff 0, #fff 100%);
+    border-image-slice: 1
+}
+
+.nectar-gradient-text[data-color=extra-color-gradient-2][data-direction=horizontal] * {
+    background-image: linear-gradient(to right, #fff, #fff)
+}
+
+.nectar-gradient-text[data-color=extra-color-gradient-2] *,
+.nectar-icon-list[data-icon-style=border][data-icon-color=extra-color-gradient-2] .list-icon-holder[data-icon_type=numerical] span {
+    color: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block
+}
+
+.nectar_icon_wrap[data-color=extra-color-gradient-2] i,
+[class*=" icon-"].extra-color-gradient-2:not(.icon-normal):before,
+[class*=" icon-"][data-color=extra-color-gradient-2]:before,
+[class^=icon-].extra-color-gradient-2:not(.icon-normal):before,
+[class^=icon-][data-color=extra-color-gradient-2]:before {
+    color: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: initial
+}
+
+.nectar-button.extra-color-gradient-2 .hover,
+.nectar-button.see-through-extra-color-gradient-2 .start {
+    background: #fff;
+    background: linear-gradient(to bottom right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: initial
+}
+
+.nectar-button.extra-color-gradient-2.no-text-grad .hover,
+.nectar-button.see-through-extra-color-gradient-2.no-text-grad .start {
+    background: 0 0 !important;
+    color: #fff !important
+}
+
+.project-title,
+html #full_width_portfolio .project-title.parallax-effect,
+html #page-header-wrap,
+html .ascend .container-wrap,
+html .ascend .project-title,
+html .carousel-wrap span.left-border,
+html .carousel-wrap span.right-border,
+html .carousel-wrap[data-full-width=true] .carousel-heading,
+html .container-wrap,
+html .page-header-no-bg,
+html .page-template-template-portfolio-php .portfolio-items .col.span_3,
+html .page-template-template-portfolio-php .portfolio-items .col.span_4,
+html .portfolio-items .col,
+html body .text_separator div {
+    background-color: #fff
+}
+
+body #header-outer,
+body #search-outer {
+    background-color: #fff
+}
+
+body #header-outer,
+body[data-header-color=dark] #header-outer {
+    background-color: rgba(255, 255, 255, 100)
+}
+
+#header-outer .cart-menu .cart-icon-wrap .icon-salient-cart,
+#search-outer #search #close a span,
+#search-outer #search input[type=text],
+.sf-sub-indicator [class*=" icon-"],
+.sf-sub-indicator [class^=icon-],
+body.ascend #boxed #header-outer .cart-menu .cart-icon-wrap i,
+body[data-header-color=custom].ascend #boxed #header-outer .cart-menu .cart-icon-wrap i,
+body[data-header-format=left-header] #social-in-menu a,
+header#top #logo,
+header#top #mobile-cart-link i,
+header#top #toggle-nav i,
+header#top .span_9 > .slide-out-widget-area-toggle i,
+header#top nav ul #search-btn a span,
+header#top nav > ul > li > a {
+    color: #757575 !important
+}
+
+.slide-out-widget-area-toggle[data-icon-animation=simple-transform]:not(.mobile-icon) .lines-button:after,
+header#top .slide-out-widget-area-toggle.mobile-icon .lines-button.x2 .lines:after,
+header#top .slide-out-widget-area-toggle.mobile-icon .lines-button.x2 .lines:before,
+header#top .slide-out-widget-area-toggle[data-icon-animation=simple-transform].mobile-icon .lines-button:after,
+header#top .slide-out-widget-area-toggle[data-icon-animation=spin-and-transform].mobile-icon .lines-button.x2 .lines,
+header#top nav ul .slide-out-widget-area-toggle a i.lines,
+header#top nav ul .slide-out-widget-area-toggle a i.lines:after,
+header#top nav ul .slide-out-widget-area-toggle a i.lines:before {
+    background-color: #757575 !important
+}
+
+header#top nav > ul > li.button_bordered > a:before {
+    border-color: #757575
+}
+
+#header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.sfHover > a,
+#header-outer:not([data-lhe=animated_underline]) header#top nav > ul > li > a:hover,
+#search-outer #search #close a span:hover,
+.ascend #header-outer:not(.transparent) .cart-outer:hover .cart-menu-wrap:not(.has_products) .icon-salient-cart,
+body #header-outer:not(.transparent) #social-in-menu a i:after,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.current-menu-ancestor > a,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.current-menu-ancestor > a i,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.current-menu-item > a,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.current_page_ancestor > a,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.current_page_item > a,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.current_page_item > a .sf-sub-indicator i,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu > li.sfHover > a,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav > ul > li > a:hover,
+body .sf-menu > li.sfHover > a .sf-sub-indicator [class^=icon-],
+body .sf-menu > li:hover > a,
+body .sf-menu > li:hover > a .sf-sub-indicator [class^=icon-],
+body header#top nav .sf-menu > li.current_page_ancestor > a .sf-sub-indicator [class^=icon-],
+body header#top nav .sf-menu > li.current_page_ancestor > a .sf-sub-indicator i,
+body header#top nav .sf-menu > li.current_page_item > a .sf-sub-indicator [class^=icon-],
+header#top #logo:hover,
+header#top nav ul #search-btn a:hover span,
+header#top nav ul .slide-out-widget-area-toggle a:hover span {
+    color: #e2001a !important
+}
+
+body header#top nav ul .slide-out-widget-area-toggle[data-icon-animation=simple-transform] a:hover .lines-button:after,
+body[data-header-format=left-header] #header-outer[data-lhe=animated_underline] header#top nav > ul > li:not([class*=button_]) > a > span:after,
+header#top nav ul .slide-out-widget-area-toggle a:hover i.lines,
+header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:after,
+header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:before {
+    background-color: #e2001a !important
+}
+
+#header-outer[data-lhe=animated_underline] header#top nav > ul > li > a:after {
+    border-color: #e2001a !important
+}
+
+#header-outer .widget_shopping_cart .cart_list a,
+#header-outer .widget_shopping_cart .cart_list li,
+#header-outer .widget_shopping_cart_content,
+#header-secondary-outer ul ul li a,
+#search-outer .ui-widget-content,
+.woocommerce .cart-notification,
+body header#top nav > ul > li.megamenu > ul.sub-menu > li > a,
+body[data-dropdown-style=minimal]:not([data-header-format=left-header]) header#top .sf-menu li ul,
+header#top .sf-menu li ul li a,
+header#top nav > ul > li.megamenu > ul.sub-menu {
+    background-color: #1f1f1f !important
+}
+
+html body[data-header-format=left-header] #header-outer .cart-outer .cart-notification:after {
+    border-color: transparent transparent #1f1f1f transparent
+}
+
+#header-outer .widget_shopping_cart .cart_list li:hover,
+#header-outer .widget_shopping_cart .cart_list li:hover a,
+#header-secondary-outer ul ul li a:hover,
+#search-outer .ui-widget-content li:hover,
+.ui-state-focus,
+.ui-state-hover,
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover,
+body #header-secondary-outer .sf-menu ul li.sfHover > a,
+body header#top nav .sf-menu ul li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer header#top nav > ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer header#top nav > ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-item > a,
+body[data-dropdown-style=minimal] header#top nav > ul > li.megamenu > ul ul li a:hover,
+body[data-dropdown-style=minimal] header#top nav > ul > li.megamenu > ul ul li.sfHover > a,
+body[data-dropdown-style=minimal]:not([data-header-format=left-header]) header#top nav > ul > li.megamenu > ul ul li.current-menu-item a,
+header#top .sf-menu li ul li a:hover,
+header#top .sf-menu li ul li.current-menu-ancestor > a,
+header#top .sf-menu li ul li.current-menu-item > a,
+header#top nav > ul > li.megamenu > ul ul li a:hover,
+header#top nav > ul > li.megamenu > ul ul li.current-menu-item a {
+    background-color: #313233 !important
+}
+
+#header-outer .widget_shopping_cart .quantity,
+#header-secondary-outer ul ul li a,
+#search-outer .ui-widget-content i,
+#search-outer .ui-widget-content li a,
+.cart-outer .cart-notification,
+.sf-menu li ul .sf-sub-indicator [class*=" icon-"],
+.sf-menu li ul .sf-sub-indicator [class^=icon-],
+.woocommerce .cart-notification .item-name,
+body #header-outer .widget_shopping_cart .cart_list a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul a,
+header#top .sf-menu li ul li a {
+    color: #ccc !important
+}
+
+#header-outer .widget_shopping_cart li:hover .quantity,
+#header-secondary-outer ul li.sfHover > a,
+#header-secondary-outer ul ul li:hover > a,
+#search-outer .ui-widget-content .ui-state-focus .title,
+#search-outer .ui-widget-content .ui-state-focus a,
+#search-outer .ui-widget-content .ui-state-focus i,
+#search-outer .ui-widget-content .ui-state-focus span,
+#search-outer .ui-widget-content .ui-state-hover .title,
+#search-outer .ui-widget-content .ui-state-hover a,
+#search-outer .ui-widget-content .ui-state-hover i,
+#search-outer .ui-widget-content .ui-state-hover span,
+#search-outer .ui-widget-content li:hover a,
+#search-outer .ui-widget-content li:hover a .title,
+#search-outer .ui-widget-content li:hover i,
+.body sf-menu li ul li a:hover,
+body #header-outer .widget_shopping_cart .cart_list li:hover a,
+body #header-outer:not([data-lhe=animated_underline]) header#top nav .sf-menu ul li.current-menu-item > a,
+body #header-secondary-outer ul ul li:hover > a i,
+body .sf-menu li ul li.sfHover > a,
+body .sf-menu ul a:active,
+body .sf-menu ul a:focus,
+body .sf-menu ul a:hover,
+body .sf-menu ul li ul li.sfHover > a .sf-sub-indicator [class^=icon-],
+body .sf-menu ul li.current-menu-ancestor > a,
+body .sf-menu ul li.current_page_ancestor > a,
+body .sf-menu ul li.current_page_item > a,
+body .sf-menu ul li.sfHover > a,
+body .sf-menu ul li:hover > a,
+body header#top nav .sf-menu ul li.current-menu-ancestor > a,
+body header#top nav .sf-menu ul li.current-menu-item > a,
+body header#top nav .sf-menu ul li.current_page_ancestor > a,
+body header#top nav .sf-menu ul li.current_page_ancestor > a .sf-sub-indicator [class^=icon-],
+body header#top nav .sf-menu ul li.current_page_ancestor > a .sf-sub-indicator i,
+body header#top nav .sf-menu ul li.current_page_item > a,
+body header#top nav .sf-menu ul li.current_page_item > a .sf-sub-indicator [class^=icon-],
+body header#top nav .sf-menu ul li.current_page_item > a .sf-sub-indicator i,
+body header#top nav .sf-menu ul li.sfHover > a,
+body header#top nav .sf-menu ul li.sfHover > a .sf-sub-indicator i,
+body header#top nav .sf-menu ul li:hover > a,
+body header#top nav .sf-menu ul li:hover > a .sf-sub-indicator i,
+body header#top nav > ul > li.megamenu ul li:hover > a,
+body ul.sf-menu > li.sfHover > a > .sf-sub-indicator i,
+body ul.sf-menu > li > a:active > .sf-sub-indicator i,
+body[data-dropdown-style=minimal] #header-outer header#top nav ul li li.sfHover > a .sf-sub-indicator [class^=icon-],
+body[data-dropdown-style=minimal] #header-outer header#top nav ul li li:hover > a .sf-sub-indicator [class^=icon-],
+body[data-dropdown-style=minimal] #header-outer header#top nav > ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer header#top nav > ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li.megamenu ul ul li.current-menu-item > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) li.current-menu-item > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) li.sfHover > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul a:hover,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a,
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a .sf-sub-indicator [class^=icon-],
+body[data-dropdown-style=minimal] #header-outer:not([data-format=left-header]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-item > a,
+body[data-dropdown-style=minimal] header#top nav > ul > li.megamenu > ul ul li a:hover,
+body[data-dropdown-style=minimal] header#top nav > ul > li.megamenu > ul ul li.sfHover > a,
+body[data-dropdown-style=minimal]:not([data-header-format=left-header]) header#top nav > ul > li.megamenu > ul ul li.current-menu-item a,
+header#top nav > ul > li.megamenu > ul ul li.current-menu-item a,
+header#top nav > ul > li.megamenu > ul > li.sfHover > a,
+header#top nav > ul > li.megamenu > ul > li > a:hover {
+    color: #e2001a !important
+}
+
+#header-secondary-outer {
+    background-color: #f8f8f8 !important
+}
+
+#header-secondary-outer #social li a i,
+#header-secondary-outer nav > ul > li > a,
+body #header-secondary-outer nav > ul > li > a span.sf-sub-indicator [class^=icon-] {
+    color: #666 !important
+}
+
+#header-secondary-outer #social li a:hover i,
+#header-secondary-outer nav > ul > li.current-menu-ancestor > a,
+#header-secondary-outer nav > ul > li.current-menu-ancestor > a span.sf-sub-indicator [class^=icon-],
+#header-secondary-outer nav > ul > li.current-menu-item > a,
+#header-secondary-outer nav > ul > li.current-menu-item > a span.sf-sub-indicator [class^=icon-],
+#header-secondary-outer nav > ul > li.sfHover > a,
+#header-secondary-outer nav > ul > li.sfHover > a span.sf-sub-indicator [class^=icon-],
+#header-secondary-outer nav > ul > li:hover > a,
+body #header-secondary-outer nav > ul > li:hover > a span.sf-sub-indicator [class^=icon-] {
+    color: #222 !important
+}
+
+#slide-out-widget-area-bg.fullscreen,
+#slide-out-widget-area-bg.fullscreen-alt .bg-inner,
+#slide-out-widget-area:not(.fullscreen-alt):not(.fullscreen) {
+    background-color: #e2001a !important
+}
+
+#slide-out-widget-area,
+#slide-out-widget-area a,
+body #slide-out-widget-area a.slide_out_area_close .icon-default-style[class^=icon-] {
+    color: #eefbfa !important
+}
+
+#slide-out-widget-area .tagcloud a {
+    border-color: #eefbfa !important
+}
+
+.slide-out-hover-icon-effect.slide-out-widget-area-toggle[data-icon-animation=simple-transform] .lines-button:after,
+.slide-out-hover-icon-effect.slide-out-widget-area-toggle[data-icon-animation=simple-transform] .lines:after,
+.slide-out-hover-icon-effect.slide-out-widget-area-toggle[data-icon-animation=simple-transform] .lines:before {
+    background-color: #eefbfa !important
+}
+
+#slide-out-widget-area h1,
+#slide-out-widget-area h2,
+#slide-out-widget-area h3,
+#slide-out-widget-area h4,
+#slide-out-widget-area h5 {
+    color: #fff !important
+}
+
+#slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a .clip-wrap,
+#slide-out-widget-area.slide-out-from-right-hover .inner .off-canvas-menu-container li a .clip-wrap,
+body #slide-out-widget-area.fullscreen a:hover,
+body #slide-out-widget-area.slide-out-from-right a:hover,
+html body #slide-out-widget-area a.slide_out_area_close:hover .icon-default-style[class^=icon-] {
+    color: #fff !important
+}
+
+#slide-out-widget-area .tagcloud a:hover {
+    border-color: #fff !important
+}
+
+#footer-outer,
+#nectar_fullscreen_rows > #footer-outer.wpb_row .full-page-inner-wrap {
+    background-color: #dfdad0 !important
+}
+
+#footer-outer #footer-widgets {
+    border-bottom: none !important
+}
+
+#footer-outer #footer-widgets .col ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, .1) !important
+}
+
+#footer-outer #footer-widgets .col .widget_recent_comments ul li {
+    background-color: rgba(0, 0, 0, .07) !important;
+    border-bottom: 0 !important
+}
+
+#footer-outer,
+#footer-outer a:not(.nectar-button),
+body[data-form-style=minimal] #footer-outer #footer-widgets .col input[type=text] {
+    color: #8d8981 !important
+}
+
+#footer-outer .col .recent_posts_extra_widget .post-widget-text span,
+#footer-outer .col .widget_recent_entries span,
+#footer-outer .widget h4 {
+    color: #8d8981 !important
+}
+
+#footer-outer #copyright,
+body {
+    border: none !important;
+    background-color: #dfdad0 !important
+}
+
+#footer-outer #copyright li a i,
+#footer-outer #copyright p {
+    color: #8d8981 !important
+}
+
+#call-to-action {
+    background-color: #ecebe9 !important
+}
+
+#call-to-action span {
+    color: #4b4f52 !important
+}
+
+body #slide-out-widget-area-bg {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+body #header-outer[data-format=centered-menu-under-logo] .span_3 {
+    padding-bottom: 28px
+}
+
+#header-outer #logo img {
+    height: 70px
+}
+
+header#top nav > ul > li:not(#social-in-menu) > a {
+    padding-bottom: 42px;
+    padding-top: 14px
+}
+
+header#top nav > ul > li#social-in-menu > a {
+    margin-bottom: 42px;
+    margin-top: 14px
+}
+
+#header-outer .cart-menu {
+    padding-bottom: 53px;
+    padding-top: 53px
+}
+
+header#top nav > ul li#search-btn,
+header#top nav > ul li.slide-out-widget-area-toggle {
+    padding-bottom: 14px;
+    padding-top: 15px
+}
+
+header#top .sf-menu > li.sfHover > ul {
+    top: 42px
+}
+
+.sf-sub-indicator {
+    height: 20px
+}
+
+#header-space {
+    height: 160px
+}
+
+body[data-smooth-scrolling="1"] #full_width_portfolio .project-title.parallax-effect {
+    top: 160px
+}
+
+body.single-product div.product .product_title {
+    padding-right: 0
+}
+
+@media only screen and (max-width:1000px) {
+
+    #header-outer[data-permanent-transparent=false] #logo .dark-version,
+    body header#top #logo img {
+        height: 50px !important
+    }
+
+    header#top .col.span_9 {
+        min-height: 74px;
+        line-height: 54px
+    }
+}
+
+#ajax-loading-screen .loading-icon,
+.loading-icon,
+.nectar-slider-loading .loading-icon,
+.portfolio-loading,
+.pp_loaderIcon {
+    background-image: url("")
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+
+    .full-width-content .span12 .swiper-slide .content h2,
+    .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content h2,
+    .nectar-slider-wrap[data-full-width=true] .swiper-slide .content h2 {
+        font-size: 45px !important;
+        line-height: 51px !important
+    }
+
+    .full-width-content .span12 .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=true] .swiper-slide .content p {
+        font-size: 18px !important;
+        line-height: 31.2px !important
+    }
+}
+
+@media only screen and (min-width :690px) and (max-width :1000px) {
+
+    .full-width-content .span12 .swiper-slide .content h2,
+    .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content h2,
+    .nectar-slider-wrap[data-full-width=true] .swiper-slide .content h2 {
+        font-size: 33px !important;
+        line-height: 39px !important
+    }
+
+    .full-width-content .span12 .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=true] .swiper-slide .content p {
+        font-size: 13.2px !important;
+        line-height: 24px !important
+    }
+}
+
+@media only screen and (max-width :690px) {
+
+    .full-width-content .span12 .nectar-slider-wrap[data-fullscreen=false] .swiper-slide .content h2,
+    .nectar-slider-wrap[data-full-width=boxed-full-width][data-fullscreen=false] .swiper-slide .content h2,
+    .nectar-slider-wrap[data-full-width=true][data-fullscreen=false] .swiper-slide .content h2 {
+        font-size: 15px !important;
+        line-height: 21px !important
+    }
+
+    .full-width-content .span12 .nectar-slider-wrap[data-fullscreen=false] .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=boxed-full-width][data-fullscreen=false] .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=true][data-fullscreen=false] .swiper-slide .content p {
+        font-size: 10px !important;
+        line-height: 17.52px !important
+    }
+}
+
+#mobile-menu #mobile-search,
+header#top nav ul #search-btn {
+    display: none !important
+}
+
+@media only screen and (min-width:1000px) {
+
+    #post-area.standard-minimal.full-width-content article.post .inner-wrap,
+    .container,
+    .nectar-recent-posts-slider .flickity-page-dots,
+    .woocommerce-tabs .full-width-content .tab-container,
+    body[data-header-format=left-header] .container {
+        max-width: 1425px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 90px
+    }
+
+    body[data-header-format=left-header] #post-area.standard-minimal.full-width-content article.post .inner-wrap,
+    body[data-header-format=left-header] .container,
+    body[data-header-format=left-header] .nectar-recent-posts-slider .flickity-page-dots,
+    body[data-header-format=left-header] .woocommerce-tabs .full-width-content .tab-container {
+        padding: 0 60px
+    }
+
+    .nectar-recent-posts-slider .flickity-page-dots,
+    body .container .page-submenu.stuck .container:not(.tab-container) {
+        padding: 0 90px !important
+    }
+
+    .swiper-slide .content {
+        padding: 0 90px
+    }
+
+    body[data-header-format=left-header] .container .page-submenu.stuck .container:not(.tab-container),
+    body[data-header-format=left-header] .nectar-recent-posts-slider .flickity-page-dots {
+        padding: 0 60px !important
+    }
+
+    body[data-header-format=left-header] .swiper-slide .content {
+        padding: 0 60px
+    }
+
+    body .container .container:not(.tab-container):not(.recent-post-container) {
+        width: 100% !important;
+        padding: 0 !important
+    }
+
+    body .carousel-heading .container {
+        padding: 0 10px !important
+    }
+
+    body .carousel-heading .container .carousel-next {
+        right: 10px
+    }
+
+    body .carousel-heading .container .carousel-prev {
+        right: 35px
+    }
+
+    .carousel-wrap[data-full-width=true] .carousel-heading a.portfolio-page-link {
+        left: 90px
+    }
+
+    .carousel-wrap[data-full-width=true] .carousel-heading {
+        margin-left: -20px;
+        margin-right: -20px
+    }
+
+    .carousel-wrap[data-full-width=true] .carousel-next {
+        right: 90px !important
+    }
+
+    .carousel-wrap[data-full-width=true] .carousel-prev {
+        right: 115px !important
+    }
+
+    .carousel-wrap[data-full-width=true] {
+        padding: 0 !important
+    }
+
+    .carousel-wrap[data-full-width=true] .caroufredsel_wrapper {
+        padding: 20px !important
+    }
+
+    #search-outer #search #close a {
+        right: 90px
+    }
+
+    #boxed,
+    #boxed #featured,
+    #boxed #featured article,
+    #boxed #header-outer,
+    #boxed #header-secondary-outer,
+    #boxed #page-header-bg[data-parallax="1"],
+    #boxed #slide-out-widget-area-bg.fullscreen,
+    #boxed .orbit > div,
+    .ascend #boxed #search-outer,
+    body[data-footer-reveal="1"] #boxed #footer-outer {
+        max-width: 1400px !important;
+        width: 90% !important;
+        min-width: 980px
+    }
+
+    body[data-hhun="1"] #boxed #header-outer:not(.detached),
+    body[data-hhun="1"] #boxed #header-secondary-outer {
+        width: 100% !important
+    }
+
+    #boxed #search-outer #search #close a {
+        right: 0 !important
+    }
+
+    #boxed .container {
+        width: 92%;
+        padding: 0
+    }
+
+    #boxed #footer-outer #copyright,
+    #boxed #footer-outer #footer-widgets {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    #boxed .carousel-wrap[data-full-width=true] .carousel-heading a.portfolio-page-link {
+        left: 35px
+    }
+
+    #boxed .carousel-wrap[data-full-width=true] .carousel-next {
+        right: 35px !important
+    }
+
+    #boxed .carousel-wrap[data-full-width=true] .carousel-prev {
+        right: 60px !important
+    }
+}
+
+.pagination-navigation {
+    -webkit-filter: url(https://pipapo.at/#goo);
+    filter: url(https://pipapo.at/#goo)
+}
+
+#search-results .result .title span,
+#slide-out-widget-area .tagcloud a,
+.bar_graph li span strong,
+.row .col.section-title .nectar-love span,
+.sharing-default-minimal .nectar-social .social-text,
+.toggle h3 a,
+.woocommerce ul.products li.product h3,
+.woocommerce-page ul.products li.product h3,
+body .carousel-heading h2,
+body .container .woocommerce-message a.button,
+body .nectar-love span,
+body .nectar-social .nectar-love .nectar-love-count,
+body .sharing-default-minimal .nectar-love,
+body .ui-widget,
+table {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+
+.wpb_wrapper p{
+    font-family: Roboto!important;
+    font-size: 15px!important;
+}
+
+.nectar-fancy-ul ul li .icon-default-style[class^=icon-] {
+    line-height: 28px !important
+}
+
+header#top nav > ul > li > a {
+    font-family: Amatic SC;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 400
+}
+
+#header-outer[data-lhe=animated_underline] header#top nav > ul > li.button_solid_color > a,
+#header-outer[data-lhe=animated_underline] header#top nav > ul > li > a,
+body #header-outer.transparent header#top nav > ul > li.button_solid_color > a,
+header#top nav > ul > li.button_solid_color > a {
+    margin-left: 13px !important;
+    margin-right: 13px !important
+}
+
+#header-outer[data-lhe=default] header#top nav > ul > li > a {
+    padding-left: 13px;
+    padding-right: 13px
+}
+
+#header-outer[data-lhe=animated_underline] header#top nav > ul > li.button_solid_color > a,
+body #header-outer.transparent header#top nav > ul > li.button_solid_color > a,
+header#top nav > ul > li.button_solid_color > a {
+    padding-left: 23px !important;
+    padding-right: 23px !important
+}
+
+#header-outer.transparent header#top nav > ul > li.button_solid_color > a:before,
+header#top nav > ul > li.button_solid_color > a:before {
+    height: 47px
+}
+
+#header-outer.transparent header#top nav > ul > li.button_bordered > a:before,
+header#top nav > ul > li.button_bordered > a:before {
+    height: 57px
+}
+
+@media only screen and (min-width :1px) and (max-width :1000px) {
+    header#top .sf-menu a {
+        font-family: - !important;
+        font-size: 14px !important
+    }
+}
+
+#page-header-bg h1,
+.full-width-content .recent-post-container .inner-wrap h2,
+body .row .col.section-title h1,
+body h1 {
+    font-family: Amatic SC;
+    letter-spacing: 2px;
+    font-size: 46px;
+    line-height: 32px;
+    font-weight: 400
+}
+
+@media only screen and (max-width:1300px) and (min-width:1000px) {
+
+    .full-width-content .recent-post-container .inner-wrap h2,
+    body .row .col.section-title h1,
+    body h1 {
+        font-size: 32.2px;
+        line-height: 22.4px
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:690px) {
+
+    body .row .col.section-title h1,
+    body h1 {
+        font-size: 29.9px;
+        line-height: 20.8px
+    }
+
+    .full-width-content .recent-post-container .inner-wrap h2 {
+        font-size: 27.6px;
+        line-height: 19.2px
+    }
+}
+
+@media only screen and (max-width:690px) {
+
+    body .row .col.section-title h1,
+    body h1 {
+        font-size: 27.6px;
+        line-height: 19.2px
+    }
+
+    .full-width-content .recent-post-container .inner-wrap h2 {
+        font-size: 20.7px;
+        line-height: 14.4px
+    }
+}
+
+#call-to-action span,
+#page-header-bg h2,
+.row .col.section-title h2,
+.woocommerce .full-width-tabs #reviews h3,
+article.post .post-header h2,
+article.post.format-status .post-content h2,
+article.post.link .post-content h2,
+article.post.quote .post-content h2,
+body h2 {
+    font-family: Oswald;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400
+}
+
+@media only screen and (max-width:1300px) and (min-width:1000px) {
+    body h2 {
+        font-size: 15.3px;
+        line-height: 18.7px
+    }
+
+    .row .span_2 h2,
+    .row .span_3 h2,
+    .row .span_4 h2,
+    .row .col-sm-2 h2,
+    .row .col-sm-3 h2,
+    .row .col-sm-4 h2 {
+        font-size: 12.6px;
+        line-height: 15.4px
+    }
+}
+
+@media only screen and (max-width:690px) {
+    .col h2 {
+        font-size: 15.3px;
+        line-height: 18.7px
+    }
+}
+
+.ascend #respond h3,
+.ascend h3#comments,
+.masonry.classic_enhanced .masonry-blog-item h3.title,
+.row .col h3,
+.toggle h3 a,
+.woocommerce ul.products li.product.material h3,
+.woocommerce ul.products li.product.text_on_hover h3,
+.woocommerce-page ul.products li.product.material h3,
+body h3 {
+    font-family: Oswald;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300
+}
+
+@media only screen and (min-width:1000px) {
+
+    .ascend .comments-section .comment-wrap.full-width-section > h3,
+    .blog_next_prev_buttons[data-post-header-style=default_minimal] .col h3 {
+        font-size: 27.2px !important;
+        line-height: 35.2px !important
+    }
+
+    .masonry.classic_enhanced .masonry-blog-item.large_featured h3.title {
+        font-size: 24px !important;
+        line-height: 30px !important
+    }
+}
+
+@media only screen and (min-width:1300px) and (max-width:1500px) {
+    body .portfolio-items.constrain-max-cols.masonry-items .col.elastic-portfolio-item h3 {
+        font-size: 13.6px !important;
+        line-height: 17px
+    }
+}
+
+@media only screen and (max-width:1300px) and (min-width:1000px),
+(max-width:690px) {
+
+    .row .span_2 h3,
+    .row .span_3 h3,
+    .row .span_4 h3,
+    .row .col-sm-2 h3,
+    .row .col-sm-3 h3,
+    .row .col-sm-4 h3 {
+        font-size: 11.2px;
+        line-height: 14px
+    }
+}
+
+#respond h3,
+.list-icon-holder[data-icon_type=numerical] span,
+.portfolio-items .col.span_3 .work-meta h4,
+.portfolio-items .work-meta h4,
+.portfolio-items[data-ps="6"] .work-meta h4,
+.row .col h4,
+body h4,
+h3#comments {
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300
+}
+
+@media only screen and (min-width:690px) {
+    .portfolio-items[data-ps="6"] .wide_tall .work-meta h4 {
+        font-size: 30.6px !important;
+        line-height: 38.6px !important
+    }
+
+    .nectar-slide-in-cart .widget_shopping_cart .cart_list .mini_cart_item > a:not(.remove) {
+        font-family: Roboto !important;
+        font-weight: 300 !important
+    }
+}
+
+.portfolio-items .work-item.style-3-alt p,
+.row .col h5,
+body h5 {
+    font-family: Oswald
+}
+
+.row .col h6,
+body h6 {
+    font-family: Oswald
+}
+
+@media only screen and (min-width:690px) and (max-width:1000px) {
+    #page-header-bg .span_6 span.subheader {
+        font-size: 22px !important
+    }
+}
+
+@media only screen and (max-width:690px) {
+    #page-header-bg .span_6 span.subheader {
+        font-size: 15px !important
+    }
+}
+
+body #slide-out-widget-area .inner .off-canvas-menu-container li a,
+body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a,
+body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a {
+    font-family: Amatic SC;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 400
+}
+
+@media only screen and (min-width:690px) and (max-width:1000px) {
+
+    body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a,
+    body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a {
+        font-size: 45px !important;
+        line-height: 36px !important
+    }
+}
+
+@media only screen and (max-width:690px) {
+
+    body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a,
+    body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a {
+        font-size: 35px !important;
+        line-height: 28px !important
+    }
+}
+
+#slide-out-widget-area .menuwrapper li small {
+    font-family: Amatic SC;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 400
+}
+
+@media only screen and (min-width:690px) and (max-width:1000px) {
+    #slide-out-widget-area .menuwrapper li small {
+        font-size: 45px !important;
+        line-height: 36px !important
+    }
+}
+
+@media only screen and (max-width:690px) {
+    #slide-out-widget-area .menuwrapper li small {
+        font-size: 35px !important;
+        line-height: 28px !important
+    }
+}
+
+.swiper-slide .content h2 {
+    font-family: Amatic SC;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 400
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+
+    body .full-width-content .span12 .swiper-slide .content h2,
+    body .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content h2,
+    body .nectar-slider-wrap[data-full-width=true] .swiper-slide .content h2 {
+        font-size: 96px !important;
+        line-height: 96px !important
+    }
+}
+
+@media only screen and (min-width:690px) and (max-width:1000px) {
+
+    body .full-width-content .span12 .swiper-slide .content h2,
+    body .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content h2,
+    body .nectar-slider-wrap[data-full-width=true] .swiper-slide .content h2 {
+        font-size: 72px !important;
+        line-height: 72px !important
+    }
+}
+
+@media only screen and (max-width:690px) {
+
+    body .full-width-content .span12 .swiper-slide .content h2,
+    body .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content h2,
+    body .nectar-slider-wrap[data-full-width=true] .swiper-slide .content h2 {
+        font-size: 60px !important;
+        line-height: 60px !important
+    }
+}
+
+#featured article .post-title h2 span,
+#portfolio-filters-inline #current-category,
+.swiper-slide .content p,
+body .text_separator div {
+    font-family: Oswald;
+    letter-spacing: 1px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 300
+}
+
+#portfolio-filters-inline ul {
+    line-height: 45px !important
+}
+
+.swiper-slide .content p.transparent-bg span {
+    line-height: 51px
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+
+    .full-width-content .span12 .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=true] .swiper-slide .content p {
+        font-size: 20.8px !important;
+        line-height: 20.8px !important
+    }
+}
+
+@media only screen and (min-width:690px) and (max-width:1000px) {
+
+    .full-width-content .span12 .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content p,
+    .nectar-slider-wrap[data-full-width=true] .swiper-slide .content p {
+        font-size: 18.2px !important;
+        line-height: 18.2px !important
+    }
+}
+
+@media only screen and (max-width:690px) {
+
+    body .full-width-content .span12 .swiper-slide .content p,
+    body .nectar-slider-wrap[data-full-width=boxed-full-width] .swiper-slide .content p,
+    body .nectar-slider-wrap[data-full-width=true] .swiper-slide .content p {
+        font-size: 18.2px !important;
+        line-height: 18.2px !important
+    }
+}
+
+#call-to-action .container a,
+#footer-outer .widget h4,
+#infscr-loading div,
+#page-header-bg .author-section a,
+#page-header-bg[data-post-hs=default_minimal] .inner-wrap > a,
+#post-area.standard-minimal article.post .more-link span,
+#post-area.standard-minimal article.post .post-meta .date a,
+#sidebar h4,
+.ascend button[type=submit],
+.ascend input[type=submit],
+.blog-recent[data-style=minimal] .col > span,
+.carousel-heading h2,
+.masonry.classic_enhanced .posts-container article .meta-category a,
+.material.product .product-wrap .product-add-to-cart a .price .amount,
+.material.product .product-wrap .product-add-to-cart a span,
+.meta_overlaid article .meta-author a,
+.meta_overlaid article.post .post-header h2,
+.meta_overlaid article.post.format-status .post-content h2,
+.meta_overlaid article.post.link .post-content h2,
+.meta_overlaid article.post.quote .post-content h2,
+.nectar-3d-transparent-button,
+.nectar-button,
+.nectar-button.medium,
+.nectar-button.small,
+.nectar-fancy-box .link-text,
+.nectar-recent-posts-slider .container .strong,
+.nectar-slide-in-cart .widget_shopping_cart .buttons a,
+.nectar_team_member_overlay .team_member_details .title,
+.pricing-column.highlight h3 .highlight-reason,
+.single .heading-title[data-header-style=default_minimal] .meta-category a,
+.swiper-slide .button a,
+.text-on-hover-wrap .categories a,
+.text_on_hover.product .add_to_cart_button,
+.uppercase,
+.widget h4,
+.woocommerce .material.product .product-wrap .product-add-to-cart a.added_to_cart,
+.woocommerce div[data-project-style=text_on_hover] .cart .quantity input.qty,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page .single_add_to_cart_button,
+.woocommerce-page ul.products li.product.material .price,
+.woocommerce-page ul.products li.product.material .price ins span,
+body #footer-outer #footer-widgets .col .widget_calendar table th,
+body .gform_wrapper .top_label .gfield_label,
+body .pie_chart .wpb_pie_chart_heading,
+body .widget_calendar table th,
+body:not([data-header-format=left-header]) header#top nav > ul > li.megamenu > ul > li > a,
+body[data-button-style=rounded] #pagination > a,
+body[data-form-submit=regular] input[type=submit] body[data-form-submit=regular] button[type=submit],
+body[data-form-submit=see-through-2] button[type=submit],
+body[data-form-submit=see-through-2] input[type=submit],
+body[data-form-submit=see-through] button[type=submit],
+body[data-form-submit=see-through] input[type=submit],
+html body #pagination > span,
+html body nav.woocommerce-pagination ul li a,
+html body nav.woocommerce-pagination ul li span,
+ul.products li.material.product span.onsale {
+    font-weight: 400
+}
+
+article.post .post-meta .month {
+    line-height: -6px !important
+}
+
+.recentcomments a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important
+}
